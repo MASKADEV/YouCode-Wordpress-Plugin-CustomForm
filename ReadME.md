@@ -16,6 +16,4 @@ Vous trouverez le menu 'Contact' dans votre panneau d'administration WordPress.
 
 # == Screenshots ==
 
-![Admin Interface](https://i.ibb.co/k3sHY09/Screen-Shot-2022-05-26-at-16-55-02.png)
-
 ![User Interface](https://i.ibb.co/PCF1HHT/Screen-Shot-2022-05-26-at-16-55-22.png)
