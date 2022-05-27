@@ -27,7 +27,18 @@ function plugin_table(){
 
 }
 
+//creating Plugin
 register_activation_hook( __FILE__, 'plugin_table' );
+
+//creation de la table en data base
+function deleteTable() {
+  global $wpdb;
+  $table_name = $wpdb->prefix."plugin";
+  $sql = "DROP TABLE IF EXISTS $table_name";
+  $wpdb->query($sql);
+  delete_option("devnote_plugin_db_version");
+}
+register_deactivation_hook( __FILE__, 'deleteTable' );
 
 function plugin_menu() {
 
